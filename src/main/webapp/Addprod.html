@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Add Product — E-Store</title>
+    <style>
+        :root{--accent:#2563eb;--muted:#6b7280}
+        *{box-sizing:border-box;margin:0;padding:0;font-family:Inter,system-ui,Arial}
+        body{background:linear-gradient(180deg,#071024,#0f172a);min-height:100vh;color:#fff}
+        header{padding:18px 28px;display:flex;justify-content:space-between;align-items:center}
+        .logo{display:flex;gap:12px;align-items:center}
+        .logo .mark{width:44px;height:44px;border-radius:8px;background:linear-gradient(135deg,var(--accent),#06b6d4);display:flex;align-items:center;justify-content:center;font-weight:800}
+        main{max-width:880px;margin:28px auto;padding:18px}
+        .panel{background:linear-gradient(180deg,rgba(255,255,255,0.02),transparent);padding:28px;border-radius:14px;box-shadow:0 10px 30px rgba(2,6,23,0.6)}
+        .form-card{background:#fff;padding:22px;border-radius:12px;color:#0f172a}
+        label{display:block;margin:12px 0 6px;font-weight:700}
+        input[type=text]{width:100%;padding:10px;border:1px solid #d1d5db;border-radius:8px}
+        input[type=submit]{margin-top:16px;width:100%;padding:12px;background:#16a34a;color:#fff;border:none;border-radius:8px;font-weight:800}
+        .back{display:inline-block;margin-top:12px;color:var(--accent);text-decoration:none}
+        footer{max-width:880px;margin:20px auto;color:rgba(255,255,255,0.6);text-align:center}
+        @media(max-width:700px){main{padding:12px}}
+    </style>
+</head>
+<body>
+    <header>
+        <a class="logo" href="index.html"><div class="mark">ES</div><div style="color:#fff;font-weight:700">E-Store</div></a>
+        <nav>
+            <a href="ViewProd.jsp" style="color:rgba(255,255,255,0.9);text-decoration:none;margin-left:14px">Products</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="panel">
+            <div class="form-card">
+                <h2 style="margin-bottom:8px">➕ Add New Product</h2>
+
+                <form action="Aps" method="post">
+                    <label>Product Code</label>
+                    <input type="text" name="pcode" placeholder="Enter Product Code" required>
+
+                    <label>Product Name</label>
+                    <input type="text" name="pname" placeholder="Enter Product Name" required>
+
+                    <label>Product Company</label>
+                    <input type="text" name="pcomp" placeholder="Enter Company Name" required>
+
+                    <label>Product Price</label>
+                    <input type="text" name="pprice" placeholder="Enter Product Price" required>
+
+                    <label>Product Quantity</label>
+                    <input type="text" name="pquan" placeholder="Enter Product Quantity" required>
+
+                    <input type="submit" value="Add Product">
+                </form>
+
+                <a href="adminHome.jsp" class="back">← Back to Dashboard</a>
+            </div>
+        </div>
+    </main>
+
+    <footer>© 2026 E-Store</footer>
+</body>
+</html>

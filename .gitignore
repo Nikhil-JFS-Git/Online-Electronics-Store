@@ -1,0 +1,22 @@
+# Compiled Java output
+/build/
+/bin/
+/target/
+*.class
+
+# Local IDE and workspace state
+.metadata/
+.idea/
+*.iml
+.vscode/
+
+# Operating system files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+/build/
+*.class
+*.log
+
+/src/main/webapp/WEB-INF/lib/*.jar

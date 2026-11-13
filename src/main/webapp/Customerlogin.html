@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Customer Login | E-Store</title>
+</head>
+
+<body style="margin:0;
+font-family:Arial,Helvetica,sans-serif;
+background:linear-gradient(135deg,#071024,#0f172a);
+display:flex;
+justify-content:center;
+align-items:center;
+min-height:100vh;">
+
+<div style="width:100%;
+max-width:1000px;
+padding:20px;">
+
+<!-- Header -->
+
+<div style="display:flex;
+justify-content:space-between;
+align-items:center;
+margin-bottom:30px;">
+
+<h2 style="margin:0;color:white;">
+🛒 E-Store
+</h2>
+
+<div>
+
+<a href="ViewProd.jsp"
+style="text-decoration:none;
+color:white;
+font-size:18px;
+font-weight:bold;">
+Products
+</a>
+
+</div>
+
+</div>
+
+<!-- Login Card -->
+
+<div style="width:420px;
+margin:auto;
+background:white;
+border-radius:15px;
+box-shadow:0 10px 30px rgba(0,0,0,.4);
+overflow:hidden;">
+
+<div style="background:#2563eb;
+padding:20px;
+text-align:center;
+color:white;">
+
+<h2 style="margin:0;">
+Customer Login
+</h2>
+
+<p style="margin-top:8px;">
+Welcome Back
+</p>
+
+</div>
+
+<div style="padding:30px;">
+
+<form action="login" method="post">
+
+<label style="font-weight:bold;">
+User Name
+</label>
+
+<input
+type="text"
+name="uname"
+placeholder="Enter Username"
+required
+style="width:100%;
+padding:12px;
+margin-top:8px;
+margin-bottom:18px;
+border:1px solid #ccc;
+border-radius:8px;
+font-size:16px;
+box-sizing:border-box;">
+
+<label style="font-weight:bold;">
+Password
+</label>
+
+<input
+type="password"
+id="pwd"
+name="upwd"
+placeholder="Enter Password"
+required
+style="width:100%;
+padding:12px;
+margin-top:8px;
+border:1px solid #ccc;
+border-radius:8px;
+font-size:16px;
+box-sizing:border-box;">
+
+<div style="margin-top:12px;">
+
+<input
+type="checkbox"
+onclick="showPassword()">
+
+Show Password
+
+</div>
+
+<div style="text-align:right;
+margin-top:10px;">
+
+<a href="ForgotPassword.html"
+style="text-decoration:none;
+color:#2563eb;
+font-size:15px;">
+Forgot Password?
+</a>
+
+</div>
+
+<input
+type="submit"
+value="Login"
+style="width:100%;
+padding:13px;
+margin-top:20px;
+background:#2563eb;
+color:white;
+border:none;
+border-radius:8px;
+font-size:18px;
+font-weight:bold;
+cursor:pointer;">
+
+<input
+type="reset"
+value="Clear"
+style="width:100%;
+padding:13px;
+margin-top:12px;
+background:#6b7280;
+color:white;
+border:none;
+border-radius:8px;
+font-size:18px;
+font-weight:bold;
+cursor:pointer;">
+
+</form>
+
+<hr style="margin:30px 0;">
+
+<div style="text-align:center;">
+
+<a href="CustomerRegister.html"
+style="display:block;
+margin-bottom:15px;
+text-decoration:none;
+font-weight:bold;
+color:#2563eb;">
+📝 New Customer? Register Here
+</a>
+
+<a href="index.html"
+style="text-decoration:none;
+font-weight:bold;
+color:#2563eb;">
+🏠 Back to Home
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+<div style="text-align:center;
+margin-top:25px;
+color:#d1d5db;">
+
+© 2026 E-Store. All Rights Reserved.
+
+</div>
+
+</div>
+
+<script>
+
+function showPassword()
+{
+    var x=document.getElementById("pwd");
+
+    if(x.type=="password")
+    {
+        x.type="text";
+    }
+    else
+    {
+        x.type="password";
+    }
+}
+
+</script>
+
+</body>
+</html>
